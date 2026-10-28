@@ -1,0 +1,196 @@
+/* =====================================================
+   Page List — 別ページ表示用スタイル
+   page-list.html 専用（モーダルとは独立してカスタマイズ可能）
+   ===================================================== */
+
+/* ── ページレイアウト ──────────────────────────── */
+
+.page-list-container {
+  width: 100%;
+  max-width: 640px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.06),
+    0 8px 32px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* ── ヘッダー ─────────────────────────────────── */
+
+.page-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.75rem;
+  border-bottom: 1px solid #eee;
+  background: linear-gradient(180deg, #fafafa, #fff);
+}
+
+.page-list-header h1 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.page-list-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #2196f3;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.page-list-back:hover {
+  background: rgba(33, 150, 243, 0.08);
+  color: #1976d2;
+  text-decoration: none;
+}
+
+/* ── プログレスバー ───────────────────────────── */
+
+.page-list__progress {
+  padding: 1.25rem 1.75rem;
+  background: #fafbfc;
+  border-bottom: 1px solid #eee;
+}
+
+.page-list__progress-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.82rem;
+  margin-bottom: 0.6rem;
+  color: #777;
+}
+
+.page-list__progress-percent {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+}
+
+.page-list__progress-bar {
+  height: 8px;
+  background: #edf0f3;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.page-list__progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #42a5f5, #2196f3);
+  border-radius: 4px;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── ページリスト ─────────────────────────────── */
+
+.page-list__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-list__item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.75rem;
+  border-bottom: 1px solid #f2f2f2;
+  transition: background 0.12s;
+}
+
+.page-list__item:last-child {
+  border-bottom: none;
+}
+
+.page-list__item:hover {
+  background: #f7f9fb;
+}
+
+.page-list__item.is-visited {
+  background: #f0f9ff;
+}
+
+.page-list__item.is-visited:hover {
+  background: #e3f2fd;
+}
+
+/* ページ番号 */
+.page-list__page-no {
+  flex-shrink: 0;
+  width: 2.5rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #aaa;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ステータス */
+.page-list__status {
+  flex-shrink: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: #ccc;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.page-list__item.is-visited .page-list__status {
+  color: #fff;
+  background: #2196f3;
+  border-color: #2196f3;
+}
+
+/* タイトル */
+.page-list__title {
+  flex: 1;
+  font-size: 0.88rem;
+  font-weight: 500;
+  line-height: 1.5;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #333;
+}
+
+.page-list__title.is-hidden {
+  color: #aaa;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.page-list__link {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.12s;
+}
+
+.page-list__link:hover {
+  color: #1976d2;
+}
+
+/* ── フッター（ページ下部） ──────────────────── */
+
+.page-list-footer {
+  padding: 1rem 1.75rem;
+  background: #fafbfc;
+  border-top: 1px solid #eee;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #999;
+}

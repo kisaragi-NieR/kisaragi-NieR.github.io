@@ -1,0 +1,67 @@
+{
+  "pages": [
+    {
+      "slug": "index",
+      "title": "消えた限定プリン事件 事案概要",
+      "path": "index.html",
+      "page_no": 1,
+      "scripts": []
+    },
+    {
+      "slug": "purchase-record",
+      "title": "消えた限定プリン事件 対象物取得記録",
+      "path": "contents/purchase-record.html",
+      "page_no": 2,
+      "scripts": []
+    },
+    {
+      "slug": "fridge-log",
+      "title": "消えた限定プリン事件 保管状況確認記録",
+      "path": "contents/fridge-log.html",
+      "page_no": 3,
+      "scripts": []
+    },
+    {
+      "slug": "family-line-log",
+      "title": "消えた限定プリン事件 家族間連絡記録",
+      "path": "contents/family-line-log.html",
+      "page_no": 4,
+      "scripts": []
+    },
+    {
+      "slug": "mother-statement",
+      "title": "消えた限定プリン事件 母証言記録",
+      "path": "contents/mother-statement.html",
+      "page_no": 5,
+      "scripts": []
+    },
+    {
+      "slug": "father-statement",
+      "title": "消えた限定プリン事件 父証言記録",
+      "path": "contents/father-statement.html",
+      "page_no": 6,
+      "scripts": []
+    },
+    {
+      "slug": "brother-statement",
+      "title": "消えた限定プリン事件 兄証言記録",
+      "path": "contents/brother-statement.html",
+      "page_no": 7,
+      "scripts": []
+    },
+    {
+      "slug": "my-statement",
+      "title": "消えた限定プリン事件 私証言記録",
+      "path": "contents/my-statement.html",
+      "page_no": 8,
+      "scripts": []
+    },
+    {
+      "slug": "report-final",
+      "title": "消えた限定プリン事件 最終調査報告書",
+      "path": "contents/report-final.html",
+      "page_no": 9,
+      "scripts": []
+    }
+  ]
+}

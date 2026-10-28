@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>消えた限定プリン事件 事案概要</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/search-modal.css">
+  <link rel="stylesheet" href="assets/css/page-counter.css">
+  <link rel="stylesheet" href="assets/css/search-bar.css">
+<link rel="stylesheet" href="assets/css/default.css">
+<meta name="generator" content="simple-item-master-three">
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="top-nav__search">
+      <label class="visually-hidden" for="searchInput">検索</label>
+      <input id="searchInput" placeholder="キーワードを入力">
+      <button id="searchBtn" type="button">検索</button>
+    </div>
+  </nav>
+  <div class="site-container">
+    <main class="content">
+      <article class="article">
+        <header class="article-header">
+          <h1 class="article-title">消えた限定プリン事件 事案概要</h1>
+        </header>
+        <div class="article-body">
+          <section>
+            <p><strong>案件名:</strong> 消えた限定プリン事件</p>
+            <p><strong>整理番号:</strong> PC-0429-LP</p>
+            <p><strong>概要:</strong> 2026年3月29日 07:20、前夜に冷蔵保管された限定プリン1個の消失が確認された。本ページは、初動確認に必要な基礎情報および関連記録への導線を集約するものである。</p>
+          </section>
+
+          <section>
+            <h2>対象物件</h2>
+            <table>
+              <tbody>
+                <tr>
+                  <th scope="row">品名</th>
+                  <td>春季限定 とろける濃厚プリン</td>
+                </tr>
+                <tr>
+                  <th scope="row">数量</th>
+                  <td>1個</td>
+                </tr>
+                <tr>
+                  <th scope="row">状態</th>
+                  <td>購入後未開封で冷蔵庫へ収納されたと申告</td>
+                </tr>
+                <tr>
+                  <th scope="row">重要性</th>
+                  <td>数量限定品につき代替調達が困難</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section>
+            <h2>時系列要約</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>時刻</th>
+                  <th>確認事項</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>21:10</td>
+                  <td>対象プリン購入</td>
+                </tr>
+                <tr>
+                  <td>21:24</td>
+                  <td>冷蔵庫へ収納</td>
+                </tr>
+                <tr>
+                  <td>22:00</td>
+                  <td>存在確認</td>
+                </tr>
+                <tr>
+                  <td>02:13</td>
+                  <td>台所方面で物音</td>
+                </tr>
+                <tr>
+                  <td>07:20</td>
+                  <td>消失判明</td>
+                </tr>
+                <tr>
+                  <td>08:05</td>
+                  <td>聞き取り開始</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section>
+            <h2>関連記録</h2>
+            <ul>
+              <li><a href="contents/purchase-record.html">購入記録ページ</a></li>
+              <li><a href="contents/fridge-log.html">冷蔵庫内状況記録ページ</a></li>
+              <li><a href="contents/family-line-log.html">家族LINEログページ</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>調査方針</h2>
+            <p>現時点では第三者侵入の痕跡は認められず、家庭内での誤取得または記憶混同の可能性を優先して検証する。特に、深夜帯の台所接近記録と対象物件の消失時刻の整合性が主要論点となる。</p>
+            <div class="case-action" id="suspectAction" hidden>
+              <button type="button" class="case-action__button" id="suspectTrigger" aria-haspopup="dialog" aria-controls="suspectModal">犯人は誰？</button>
+            </div>
+          </section>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <p>&copy; 2026 消えた限定プリン事件</p>
+      <p>このWebサイトの内容はすべてフィクションであり、実在の人物・団体とは一切関係がありません。</p>
+    
+      <p class="yacho-powered-by" style="margin-top:8px;font-size:11px;opacity:.55;">Powered by <a href="https://sim3.net/yacho/" target="_blank" rel="noopener">YACHO(SIM3)</a></p>
+    </footer>
+  </div>
+
+<div id="page-counter" class="page-counter">
+  <span id="page-current"></span>
+  <span class="sep"> / </span>
+  <span id="page-total"></span>
+</div>
+
+<div class="case-modal hidden" id="suspectModal" aria-hidden="true">
+  <div class="case-modal__overlay" data-close-modal="true"></div>
+  <div class="case-modal__content" role="dialog" aria-modal="true" aria-labelledby="suspectModalTitle">
+    <h2 id="suspectModalTitle">犯人を特定してください</h2>
+    <p>関連記録を参照し、最も可能性の高い人物を選択してください。</p>
+    <form class="case-modal__choices" id="suspectForm">
+      <label class="case-modal__choice">
+        <input type="radio" name="suspect" value="mother">
+        <span>母</span>
+      </label>
+      <label class="case-modal__choice">
+        <input type="radio" name="suspect" value="father">
+        <span>父</span>
+      </label>
+      <label class="case-modal__choice">
+        <input type="radio" name="suspect" value="brother">
+        <span>兄</span>
+      </label>
+      <label class="case-modal__choice">
+        <input type="radio" name="suspect" value="daughter">
+        <span>私</span>
+      </label>
+      <div class="case-modal__actions">
+        <button type="submit" class="case-action__button">判定する</button>
+        <button type="button" class="case-modal__secondary" data-close-modal="true">閉じる</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>window.YACHO_BASE = "./"; window.YACHO_PROVIDER_MODE = "json";</script>
+<script type="module" src="./assets/js/core/index.js"></script>
+<script type="module" src="./assets/js/page-progress.js"></script>
+<script type="module" src="./assets/js/case-suspect.js"></script>
+</body>
+</html>
